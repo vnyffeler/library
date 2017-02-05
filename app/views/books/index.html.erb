@@ -1,1 +1,12 @@
-<h1><%= @books.inspect %></h1>
+<%= @books.each do |book| %>
+	<div>
+		<h1><%= book.title %></h1><br />
+		<i><%= book.author %></i><br />
+		<i><%= book.year %></i><br />
+		<i><%= book.genre %></i><br />
+	</div>
+
+	<hr />
+
+<% end %> 	
+
