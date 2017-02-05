@@ -7,7 +7,7 @@ class CreateBooks < ActiveRecord::Migration[5.0]
     	t.string :year
     	t.string :genre
 
-      #t.timestamps
+      t.timestamps
     end
   end
 end
