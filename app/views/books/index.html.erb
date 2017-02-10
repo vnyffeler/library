@@ -1,9 +1,13 @@
-<%= @books.each do |book| %>
+<% @books.each do |book| %>
 	<div class= "booyah-box col-xs-10 col-xs-offset-1">
 		<h1><%= book.title %></h1>
 		<i><%= book.author %></i><br />
 		<i><%= book.year %></i><br />
 		<i><%= book.genre %></i><br />
+
+		<%= link_to 'Edit', [:edit, book], class: 'btn btn-primary' %>
+		<%= link_to 'Delete', book_path(book), method: :delete, class: 'btn btn-primary' %>
+
 	</div>
 
 <% end %> 	
